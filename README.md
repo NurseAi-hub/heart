@@ -24,6 +24,22 @@ Deploying this specific model in a real-time Emergency Department (ED) triage se
 
 ---
 
+## 📊 Key Clinical Insights & Feature Importance
+Based on the Random Forest feature importance analysis, the model identified key clinical indicators as the primary drivers for predicting heart disease risk[cite: 1]:
+* **`thal_2` (Thalassemia defect type 2 / Reversible defect):** Rank #1 feature strongly correlating with myocardial ischemia.
+* **`oldpeak` (ST depression induced by exercise relative to rest):** A classic ECG sign indicating ischemic heart disease during physical stress.
+* **`thal_3` (Fixed defect):** Critical category indicating prior myocardial infarction.
+* **`ca` (Number of major vessels colored by fluoroscopy):** Directly measures coronary artery blockage.
+* **`exang` (Exercise-induced angina):** Chest pain triggered by exertion, a primary symptom of coronary artery disease.
+
+---
+
+## 📈 Model Performance & Visualizations
+* **Random Forest Classifier (AUC = 0.91):** Demonstrated superior overall class separation and non-linear feature interaction handling.
+* **Logistic Regression (AUC = 0.89):** Provided a strong, interpretable linear baseline with high sensitivity.
+
+---
+
 ## 🛠️ Tech Stack & Model Files
 - **Python:** Pandas, NumPy, Scikit-Learn
 - **Models:** Logistic Regression, Random Forest Classifier
